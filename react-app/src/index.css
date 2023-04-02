@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
 
 nav {
@@ -51,11 +52,15 @@ section {
 .card {
   width: 175px;
   font-size: 12px;
+  text-align: start;
 }
 
 .card--image {
   width: 100%;
+  max-width: 176px;
+    height: 235px;
   border-radius: 9px;
+  object-fit: cover;
 }
 
 .card--stats {
@@ -65,4 +70,10 @@ section {
 
 .card--star {
   height: 14px;
+}
+.card-section {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
 }
