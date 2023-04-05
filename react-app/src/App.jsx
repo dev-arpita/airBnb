@@ -12,22 +12,22 @@ function App() {
       <Hero />
       <div className='card-section'>
         <Card
-          img="../images/katie-zaferes.png"
-          ratingScore="5.0"
+          img="katie-zaferes.png"
+          ratingScore={5.0}
           ratingCount="(6) •"
           location="USA"
           text="Life Lessons with Katie Zaferes"
           cost="From $136"/>
         <Card
-          img="../images/wedding-photography 1.png"
-          ratingScore="5.0"
+          img="wedding-photography 1.png"
+          ratingScore={5.0}
           ratingCount="(6) •"
           location="USA"
           text="Learn wedding photography"
           cost="From $125"/>
         <Card
-          img="../images/mountain-bike 1.png"
-          ratingScore="4.8"
+          img="mountain-bike 1.png"
+          ratingScore={4.8}
           ratingCount="(2) •"
           location="USA"
           text="Group Mountain Biking"

@@ -4,7 +4,7 @@ export default function Card(props) {
     const{ img, ratingScore, ratingCount, location, text, cost } = props
     return (
         <div className="card">
-            <img src={img} className="card--image" />
+            <img src={`../images/${img}`} className="card--image" />
             <div className="card--stats">
                 <img src="../images/star.png" className="card--star" />
                 <span>{ratingScore}</span>
