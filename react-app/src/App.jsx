@@ -2,16 +2,36 @@ import React from 'react'
 import NavBar from './components/NavBar'
 import Hero from './components/Hero'
 import Card from './components/Card'
+import cardData from "./data"
 import './App.css'
 
 function App() {
+  const cardEl = cardData.map(item => {
+    return (
+      <Card
+        img= {item.coverImg}
+        rating= {item.stats.rating}
+        reviewCount= {item.stats.reviewCount}
+        location= {item.location}
+        title= {item.title}
+        price= {item.price} />
+  )
+  })
   return (
     <div className='container'>
 
       <NavBar />
       <Hero />
       <div className='card-section'>
-        <Card
+        {cardEl}
+      </div>
+    </div>
+  )
+}
+
+export default App
+/**
+ * <Card
           img="katie-zaferes.png"
           ratingScore={5.0}
           ratingCount="(6) •"
@@ -32,9 +52,4 @@ function App() {
           location="USA"
           text="Group Mountain Biking"
           cost="From $50"/>
-    </div>
-    </div>
-  )
-}
-
-export default App
+ */
